@@ -1,5 +1,5 @@
 tree: leaves.cpp branches.cpp roots.cpp main.cpp leaves.h branches.h roots.h
-    g++ leaves.cpp branches.cpp roots.cpp main.cpp -o tree
+	g++ leaves.cpp branches.cpp roots.cpp main.cpp -o tree
 
 clean:
-    rm -f tree
+	rm -f tree

@@ -1,1 +1,12 @@
-   
+CC=g++
+TARGET=tree
+
+$(TARGET): *.cpp *.h
+	$(CC) *.cpp *.h -o $@
+	echo *.cpp *.h > compiled.txt
+
+%.o: %.cpp %.h
+	$(CC) -c $<
+
+clean:
+	rm -f $(TARGET) *.o compiled.txt
